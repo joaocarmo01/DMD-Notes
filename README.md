@@ -1,4 +1,4 @@
-# DMD-Notes
+# DMD-Notes-Week 1
 
 **How do you print things out the debug area?**
 
