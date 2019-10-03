@@ -26,7 +26,7 @@ IBOutlet: Lets the IBAction work
 **What is the name of the function that gets called automaticaly in your view controller classes?**
 
 ```swift
-viewDidLoad
+override func viewDidLoad()
 ```
 **What is the assistant editor and what does it do?**
 
