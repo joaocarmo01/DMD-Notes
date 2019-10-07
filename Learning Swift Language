@@ -2,9 +2,7 @@
 
 import UIKit
 
-```
-swift
-
+```swift
 var str = "Hello, playground"
 
 let a = 10
@@ -37,4 +35,5 @@ else {
     
     print("nothing was true")
 }
+
 ```
