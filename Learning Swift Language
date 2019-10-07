@@ -2,6 +2,13 @@
 
 import UIKit
 
+let is a constant 
+string may only be used with phrares 
+int may only be used with numbers
+else (or) works like a var (check condition)
+if (condition)
+else if ( used to check other comnditions)
+
 ```swift
 var str = "Hello, playground"
 
