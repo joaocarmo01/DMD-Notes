@@ -1,0 +1,40 @@
+//Learning Swift Language
+
+import UIKit
+
+```
+swift
+
+var str = "Hello, playground"
+
+let a = 10
+let b = 5
+let c = 2
+let d = 20
+
+if a < 23 && c > 20 {
+    
+    print("branch 1")
+}
+
+else if !(b > 4) && c > 1 {
+    
+    print("barnch 2")
+}
+
+else if !(c > 13 || a > 5) && b < 10 {
+    
+    print("branch 3")
+}
+
+else if d > 18 {
+    
+    print("branch 4")
+    print("branch 1")
+}
+
+else {
+    
+    print("nothing was true")
+}
+```
