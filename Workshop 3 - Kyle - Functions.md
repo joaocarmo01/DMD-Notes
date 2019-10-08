@@ -26,6 +26,7 @@ override func viewDidLoad() {
 **What are function "arguments" or "parameters?"
 
 to write an argumnet you need an function , an argument and a string than you may print the string
+(values thta canebe added into a function) eg: ```swift firstNumber: Int, secondNumber: Int ```
 
 ```swift
  func argumnet(username: String){
@@ -81,19 +82,41 @@ override func viewDidLoad() {
     argumnet(username: "Jakub")
     argumnet(username: "Jane")
         
-       add(firstNumber: 6, secondNumber: 7)
+    add(firstNumber: 6, secondNumber: 7)
    
-       subtract(firstNumbert: 23, secondNumber: 7)
+    subtract(firstNumbert: 23, secondNumber: 7)
        
-       devide(firstNumber: 3254364, secondNumber: 324234)
+    devide(firstNumber: 3254364, secondNumber: 324234)
        
-       times(firstNumber: 1, secontNumber: 2)
+    times(firstNumber: 1, secontNumber: 2)
 ```
 **What are return values?
 
-Give an example of a function that returns a value.
+To return a value use ->
 
-Show how you would "call" this function
+```swift
+func addNumbers(first: Int, second: Int) -> Int {
+        return first + second
+    }
+ ```
+
+"call" this function
+
+```swift
+override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let result = addNumbers(first: 79, second: 23)
+        print(result)
+    }
+```
 
 **How do you access functions of a class? Give an example.
+
+A calss outlines an object.
+Anything in the {} is part of a class and is an object with a specific porpuse.
+
+```swift
+class ViewController: UIViewController {}
+```
 
