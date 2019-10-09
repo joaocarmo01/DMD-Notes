@@ -5,23 +5,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var ScoreLabel: UILabel!
-    
-    @IBOutlet weak var TargetLabel: UILabel!
-    
-    var score = 0
     var target = 0
     var newTarget = 0
+    var score = 0
+    
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    @IBOutlet weak var targetLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        print("hello world")
-        
+        generateRandomNumber()
     }
 
-    @IBAction func HigherGuess(_ sender: Any) {
-    generateNumber()
+    func generateRandomNumber() {
+        newTarget = Int.random(in: 0...100)
+    }
+
+    @IBAction func higherGuess(_ sender: Any) {
+    generateRandomNumber()
         if newTarget > target {
             correctGuess()
         } else {
@@ -29,37 +32,30 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func GuessLower(_ sender: Any) {
-   generateNumber()
-          if newTarget < target {
-              correctGuess()
-          } else {
-              wrongGuess()
-        }
+    
+    @IBAction func lowerGuess(_ sender: Any) {
+    generateRandomNumber()
+    if newTarget < target {
+        correctGuess()
+    } else {
+        wrongGuess()
+      }
     }
-  
-    func generateNumber() {
-        newTarget = Int.random(in: 0...100)
-        }
+    
     func correctGuess() {
-       
         score += 1
-        target = newTarget
-        ScoreLabel.text = "Score: \(score)"
-        TargetLabel.text = "\(target)"
+       target = newTarget
+        scoreLabel.text = "Score: \(score)"
+        targetLabel.text = "\(target)"
     }
+    
     func wrongGuess() {
         score = 0
         target = 0
         newTarget = 0
-        ScoreLabel.text = "Score: \(score)"
-               TargetLabel.text = "\(target)"
-        
-        
+        scoreLabel.text = "Score: \(score)"
+        targetLabel.text = "\(target)"
     }
-    
-
 }
-
 
 ```
