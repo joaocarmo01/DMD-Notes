@@ -1,17 +1,26 @@
 # High-Low-Game
 
 ```swift
+//
+//  ViewController.swift
+//  App 1 try 6
+//
+//  Created by Joao  Carmo on 09/10/2019.
+//  Copyright © 2019 Joao  Carmo. All rights reserved.
+//
+
 import UIKit
 
 class ViewController: UIViewController {
 
-    var target = 0
-    var newTarget = 0
     var score = 0
+    var target = 0
+    var  newTarget = 0
     
     @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var targetLabel: UILabel!
+    
     
     
     override func viewDidLoad() {
@@ -20,11 +29,11 @@ class ViewController: UIViewController {
     }
 
     func generateRandomNumber() {
-        newTarget = Int.random(in: 0...100)
+        newTarget = Int.random(in: -50...50)
     }
-
+    
     @IBAction func higherGuess(_ sender: Any) {
-    generateRandomNumber()
+        generateRandomNumber()
         if newTarget > target {
             correctGuess()
         } else {
@@ -34,28 +43,34 @@ class ViewController: UIViewController {
     
     
     @IBAction func lowerGuess(_ sender: Any) {
-    generateRandomNumber()
-    if newTarget < target {
-        correctGuess()
-    } else {
-        wrongGuess()
-      }
+        generateRandomNumber()
+              if newTarget < target {
+                  correctGuess()
+              } else {
+                  wrongGuess()
+              }
     }
     
     func correctGuess() {
         score += 1
-       target = newTarget
-        scoreLabel.text = "Score: \(score)"
+        target = newTarget
+        targetLabel.textColor = UIColor.black
+        scoreLabel.text = "Score \(score)"
         targetLabel.text = "\(target)"
     }
     
-    func wrongGuess() {
+    func wrongGuess(){
         score = 0
         target = 0
         newTarget = 0
-        scoreLabel.text = "Score: \(score)"
+        targetLabel.textColor = UIColor.red
+        scoreLabel.text = "Score \(score)"
         targetLabel.text = "\(target)"
     }
+
 }
+
+
+
 
 ```
