@@ -64,6 +64,11 @@ Uses an array (list) of items. The command then filters through the list and the
 
 **Which statement does 'for in' most commonly use?**
 
+is teh array "let"
+
+```swift
+let username = "joao"
+```
 
 **Workshop 4**
 
@@ -95,8 +100,8 @@ class ViewController: UIViewController {
         
         }
 
-    @IBAction func goButton(_ sender: UIButton) {
-        guard let username = usernameField.text, let password = passwordField.text, let confirmPasswordField = confirmPasswordField.text else {
+     @IBAction func goButton(_ sender: Any) {
+     guard let username = usernameField.text, let password = passwordField.text, let confirmPasswordField = confirmPasswordField.text else {
             return
         }
         
