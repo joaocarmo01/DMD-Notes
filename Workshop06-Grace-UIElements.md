@@ -105,6 +105,6 @@ Storage for images on device are kept in the assets folder. These images are usu
 You can access the images in the assets folder by using this snippet of code and calling the name of the image you want (REMEMBER it is case and space sensitive!)
 
 ```swift
-imageView.image = UIImage.init(named: "sky")
+imageView.image = UIImage.init(named: "surf")
 ```
 
