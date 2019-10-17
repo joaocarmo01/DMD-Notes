@@ -13,31 +13,32 @@ User Interface
 
 **What symbol signals that a connections has been broken in your View Controller Class?**
 
-A red sign will pop-up, like an error. menaing that tehre is somethinbg wrong with the calass
+A red sign will pop-up, like an error. menaing that tehre is somethinbg wrong with the calass Eg (change the camel casing conection will be broken and program will not run)
+Class is not key vakue not coding complient
 
 **How can you reconnect a broken link on a UIElement from your View Controller Class to the storyboard?**
-
-
+debug are look for complient line
+select view controller, go to conection onspector (circle with arrow). Orage triangle delete it.
 
 **What symbol signals that a connections has been broken in your Storyboard Connections Inspector?**
 
-
+Little orange triangle
 
 **How to remove a broken connections in the connections inspector?**
 
-
+click on object in view crontroller
 
 **How to link a UIElement to View Controller class?**
 
-
+control and drag
 
 **How to embed a navigation controller?**
 
-
+Editor, embed in, naviagtion cotroller
 
 **Where to keep local images within your project?**
 
-
+In . the assests folder
 
 **Describe an IBAction?**
 
