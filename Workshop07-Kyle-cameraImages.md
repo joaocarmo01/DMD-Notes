@@ -9,11 +9,15 @@ At the UIKit level, there are **two** objects you need deal with:
 
 The *UIImage* is the image itself. The *UIImageView* is the view that displays the image. Think of the UIImageView as the frame that holds the image. 
 
+There is the possibility to add what ever images I want however I have to be caurfull with image sizes.
+
 >A UIImage does **not** display an image.
 
 ### Working With Images In Code 
 
 Images that you want to include in your project should be dragged into to **Assets.xcassets** folder of your project. 
+
+It will be helfull to adda difrent name to the image than the one that comes as default from the web.
 
 To create an image from one of those assets in your code:
 
@@ -38,7 +42,7 @@ myImageView.image = myImage
 
 Explore the `contentMode` property of the image view to see how the image can be displayed in the frame.
 
-
+Here is wehre images may become destroted therefore i need to make sure thta i use the correct ratio or use a more suitabel image
 ### Using Images The Camera/Library
 
 >Note: Trying to access the camera on the simulator will crash your app. This will work on a real device. 
