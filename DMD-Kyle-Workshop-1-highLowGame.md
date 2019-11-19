@@ -74,3 +74,6 @@ class ViewController: UIViewController {
 
 
 ```
+High low helped e understand the use of fuctions an dwhen they should be utelized.
+Also allowed me to see thta it is possibel to create something with very minimal code.
+Learned how to conect actions.
