@@ -12,6 +12,8 @@ All or view controllers are subcalsses of the main screen, the starting screen
 
 **What is the life cycle of the view controller?**
 
+It is where the braket of theat view controller sarts and ends
+
 **Name at least two (other than the one given) of the functions we can use in this life cycle.**
   
 ```swift
