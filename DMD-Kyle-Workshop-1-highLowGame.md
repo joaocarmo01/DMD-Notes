@@ -76,4 +76,5 @@ class ViewController: UIViewController {
 ```
 High low helped e understand the use of fuctions an dwhen they should be utelized.
 Also allowed me to see thta it is possibel to create something with very minimal code.
-Learned how to conect actions, and the use of variables
+Learned how to conect actions, and the use of variables.
+Note: to use the fuctions make sure you call them on the view did load
